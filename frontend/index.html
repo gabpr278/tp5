@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <h1>Ma Todo App</h1>
+
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Nouvelle tâche..."
+                onkeydown="if(event.key === 'Enter') createTodo()">
+            <button class="add-btn" onclick="createTodo()">Ajouter</button>
+        </div>
+
+        <ul id="todoList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
